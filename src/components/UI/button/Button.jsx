@@ -66,7 +66,6 @@ const Button_color = {
 		default: "#0052bc",
 		active: "#ffff",
 		hover: " #0052bc",
-		// active: 'background: #000000'
 	},
 	contained: {
 		default: "#ffffff",
@@ -80,7 +79,6 @@ const Button_color = {
 	},
 	Danger: {
 		default: "#ffffff",
-		// active: "#C20OBB",
 		active: "#C20OBB",
 		hover: "#E54343",
 	},

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Rating from "../../assets/image/rating-50.png";
 
 const Tasks3 = () => {
 	return (
@@ -17,12 +18,13 @@ const Tasks3 = () => {
 								<h3>
 									Iphone 15 Pro Max Ultra 556gb <br /> черный
 								</h3>
-								<div>
+								<RatingContent>
 									<p>Рейтинг</p>
-									<img src="" alt="" />
-								</div>
+									<img src={Rating} alt="" />
+									<span>(138)</span>
+								</RatingContent>
 								<GreenText>В наличии(55)</GreenText>
-								<p>Код товара: 393478</p>
+								<ClassP>Код товара: 393478</ClassP>
 							</Box>
 							<ContentDiv>
 								<ButtonContent>
@@ -63,10 +65,11 @@ const Tasks3 = () => {
 								<h3>
 									Samsung Galaxy s22 Ultra 556gb <br /> черный
 								</h3>
-								<div>
+								<RatingContent>
 									<p>Рейтинг</p>
-									<img src="" alt="" />
-								</div>
+									<img src={Rating} alt="" />
+									<span>(138)</span>
+								</RatingContent>
 								<GreenText>В наличии(55)</GreenText>
 								<p>Код товара: 393478</p>
 							</Box>
@@ -142,6 +145,13 @@ const Box = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	h3 {
+		color: #131357;
+	}
+`;
+
+const ClassP = styled.p`
+	color: #131357;
 `;
 const GreenText = styled.p`
 	color: green;
@@ -152,10 +162,6 @@ const ButtonContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-top: 55px;
-	/* justify-content: center;
-	align-items: center; */
-	/* gap: 90px; */
-	/* align-items: center; */
 `;
 
 const CardButton = styled.div`
@@ -209,5 +215,20 @@ const ContentImg2 = styled.div`
 	img {
 		width: 380px;
 		height: 100%;
+	}
+`;
+
+const RatingContent = styled.div`
+	display: flex;
+	img {
+		width: 90px;
+		margin-left: 12px;
+	}
+	span {
+		margin-left: 5px;
+		color: #131357;
+	}
+	p {
+		color: #131357;
 	}
 `;
